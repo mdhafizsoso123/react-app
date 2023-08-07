@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: blueviolet;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#quote-wrapper{
+    width: 420px;
+}
+#quote-wrapper h2{
+    background-color: aqua;
+    padding: 10px 20px;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, .2);
+    text-align: center;
+    border-bottom: none;
+}
+#quote-wrapper #quote{
+    padding: 20px 50px;
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .2);
+    text-align: center;
+    font-size: 1.2em;
+}
+#quote-wrapper #quote-author{
+    background-color: rgba(255, 255, 255, .2);
+    padding: 5px 10px;
+    text-align: right;
+    font-size: 1.2em;
+    color: #fff;
+    border-left: solid 1px #fff;
+    border-right: solid 1px #fff;
+}
+
+#quote-wrapper #next-quote-btn{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #fff;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, .5);
+}
+
